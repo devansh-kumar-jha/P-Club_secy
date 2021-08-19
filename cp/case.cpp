@@ -12,9 +12,19 @@ void dkj()
 int32_t main()
 {
     dkj();
-    int t;   cin>>t;
-    while(t--) {
 
+    // The below code will generate n random test cases with the required
+    // Constraints in place.
+    // The test cases for both the problems would be the same but the answer would be different for them.
+    // All the test cases would be stored in the file created for storage.
+
+    cout<<"Enter total number of test cases to generate";
+    int n;  cin>>n;
+
+    while(n--) {
+        int t= rand()%1000 + 1;
+        
     }
+
     return 0;
 }
