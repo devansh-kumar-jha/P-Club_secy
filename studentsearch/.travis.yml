@@ -1,0 +1,9 @@
+language: node
+
+before_install:
+- npm install -g @angular/cli
+
+install:
+  - cd frontend && npm install && cd ..
+
+script: ./scripts/run-ci.sh
