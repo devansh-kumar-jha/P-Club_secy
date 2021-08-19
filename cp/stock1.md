@@ -21,8 +21,8 @@ As Mahesh is a newbie in trading he would like you to help him with the problem.
 
 ### INPUT : 
 First line of input contains the total number of test cases (0 < t <= 1000)
-Each test case contains of two lines , first having a positive integer n (0 < n < 1000000) which signifies the number of times the price of the share was noted.
-Next line contains n space seperated integers 0 < a(i) < 500 each denoting the i<sup>th</sup> observation. 
+Each test case contains of two lines , first having a positive integer n (0 < n <= 10<sup>5</sup>) which signifies the number of times the price of the share was noted.
+Next line contains n space seperated integers 0 <= a<sub>i</sub> <= 500 for each 1 <= i < n denoting the i<sup>th</sup> observation. 
 
 ### OUTPUT :
 You have to output the maximum possible profit that Mahesh would have possibly got. If no profit is possible then output -1.
@@ -30,6 +30,7 @@ You have to output the maximum possible profit that Mahesh would have possibly g
 
 ### EASY VERSION CONSTRAINTS :
  - For this question we would assume that Mahesh only trades for a maximum of 2 times in the stock as he is highly in-expirienced and thus don't wan't to take risk.
+ - The prices noted down by him are always non negative integers.
 
 
 ### EXAMPLE TEST CASES :
@@ -52,5 +53,6 @@ Output
 ```
 
 ##### EXPLANATION OF TEST CASE -
-In case - 1 for test case - 1 Just buy the share at 3 and sell at 7 is the only possibility.
-In case - 2 for test case - 1 buy the stock at 24 and sell at 40 which gives you the maximum profit of 16.
+In case - 1 for test case - 1   Just buy the share at 3 and sell at 7 is the only possibility.
+
+In case - 2 for test case - 1   buy the stock at 24 and sell at 40 which gives you the maximum profit of 16.

@@ -12,17 +12,20 @@ void dkj()
 int32_t main()
 {
     dkj();
-    int n;  cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++) cin>>a[i];
+    int t;  cin>>t;
+    while(t--) {
+        int n;  cin>>n;
+        int a[n];
+        for(int i=0;i<n;i++) cin>>a[i];
 
-    int min=a[0],ans=-1;
-    for(int i=1;i<n;i++) {
-        if(ans<(a[i]-min)) ans=a[i]-min;
-        if(min>a[i]) min=a[i];
+        int min=a[0],ans=-1;
+        for(int i=1;i<n;i++) {
+            if(ans<(a[i]-min)) ans=a[i]-min;
+            if(min>a[i]) min=a[i];
+        }
+        if(ans>0) cout<<ans;
+        else cout<<-1;
     }
-    if(ans>0) cout<<ans;
-    else cout<<-1;
     
     return 0;
 }
