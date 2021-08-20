@@ -37,7 +37,7 @@ However it is not much useful for this problem to use 2-D arrays as they will le
 ##### A Tricky problem in this
 However in the above approach developed for solving the 2 set transaction problem we cannot find the maximum profit for 2 set so easily because we have to cover a end point error.
 Consider a 2D Matrix m<sub>ij</sub> where 0 <= i,j <= n than basically we need to find a value t such that if we take the sum of single set transaction maximum in them it comes out to be the maximum but we cannot generate a expression directly to be 
-max(m<sub>it</sub>+m<sub>(t+1)j</sup>) because in case in the subarray from i to t we don't include the t<sub>th</sub> element in the transaction than the related quantity here would be max(m<sub>it</sub>+m<sub>(l+1)j</sup>) where l is the selling point of the previous sub array where the first set of transaction completed, so in this way we can have a complex situation.
+max(m<sub>it</sub>+m<sub>(t+1)j</sup>) because in case in the subarray from i to t we don't include the t<sub>th</sub> element in the transaction than the related quantity here would be max(m<sub>it</sub>+m<sub>(l+1)j</sub>) where l is the selling point of the previous sub array where the first set of transaction completed, so in this way we can have a complex situation.
 
 However our solution of iterating will anyhow work because we have been iterating from the start and the case of taking the immediate next element of selling point will be taken care of.
 **Also from the wastage of test cases we can see for a possible optimization here and will follow up next with a more optimized algorithm later on**
