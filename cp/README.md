@@ -1,4 +1,5 @@
 # TASK 6  COMPETITIVE PROGRAMMING
+*tldr - too long don't read ? Just scroll to the end of the README file*
 
 ### TASK
 
@@ -13,7 +14,6 @@
 
 
 ### USAGE DETAILS OF THE PROGRAMS
-*tldr - too long don't read ? Just scroll to the end of the README file*
 
  - First read the problem in the [easy version](stock1.md) and then the [hard version](stock2.md) or may be opposite as the questions are pretty much the same.
  - The to solve those problems :p it took some effort to frame them :-) so I would like you to rate the questions on CF scale to get an idea of their difficulty.
