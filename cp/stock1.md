@@ -32,6 +32,8 @@ You have to output the maximum possible profit that Mahesh would have possibly g
  - For this question we would assume that Mahesh only trades for a maximum of 2 times in the stock as he is highly in-expirienced and thus don't wan't to take risk.
  - The prices noted down by him are always non negative integers.
 
+Remember that a trade is defined as a single sale or purchase in the stock. So buying 2 shares of a stock would mean 2 trades in that stock. 
+
 
 ### EXAMPLE TEST CASES :
 

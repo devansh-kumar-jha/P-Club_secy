@@ -18,3 +18,11 @@ However the idea is quite simple but the problem arises that we don't know both 
 
 However their is a clever implementation which uses the idea of iterating over the array and storing the minimum value in the array so far and checking whether we can substract the current number to get a max_profit or not using a variable to store the maximum difference till now.
 This will do the problem in a *single pass linear algorithm*
+
+Also we can run a opposite algorithm as well to do the same problem that is we would store the maximum value till now in the array and substract from that the current value and store the max_profit as done in the method above.
+
+
+### Even more efficient Space Complexity
+For getting even a better space complexity we can just use the 1st way of forward iteration in the array and rather than storing the data in the array we can use a variable which can get the current input number of the series and then can use it to do the operations as above.
+So this will finally give a **Linear Time and Constant Space Complexity Algorithm** i.e. *O(N) in time and O(1) in space*
+This is the most efficient algorithm I can think of. If you get any other more efficient one please do tell :-)

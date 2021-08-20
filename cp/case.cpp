@@ -13,8 +13,7 @@ int32_t main()
 {
     dkj();
 
-    // The below code will generate n random test cases with the required
-    // Constraints in place.
+    // The below code will generate n random test cases with the required constraints in place.
     // The test cases for both the problems would be the same but the answer would be different for them.
     // All the test cases would be stored in the file created for storage.
 
@@ -23,7 +22,7 @@ int32_t main()
 
     while(n--) {
         int t= rand()%1000 + 1;
-        
+
     }
 
     return 0;
