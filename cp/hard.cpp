@@ -18,8 +18,8 @@ void fill(vector <vector <int>> &p,int a[],int n)
 {
     for(int i=0;i<n;i++) {
         for(int j=0;j<n;j++) {
-            if(j<=i || i==n-1) p[i][j]=-1;
-            else p[i][j]=find_maxp(a,i,j,n);
+            if(j<=i || i==n-1) p[i].push_back(-1);
+            else p[i].push_back(find_maxp(a,i,j,n));
         }
     }
     return;
@@ -47,9 +47,10 @@ int32_t main()
 
         // cout<<1<<"\n";
         vector <vector <int>> max(n);
-        // fill(max,a,n);
-        int ans=0;
-        // ans = find_max(max,n);
+        // max[0][0]=0;
+        fill(max,a,n);
+        int ans=max[0][0];
+        ans = find_max(max,n);
         cout<<ans<<"\n";
     }
     return 0;

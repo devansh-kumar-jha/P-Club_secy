@@ -22,7 +22,13 @@ int32_t main()
 
     while(n--) {
         int t= rand()%1000 + 1;
+        int n= rand()%100000 + 1;
+        int a[n];
+        for(int i=0;i<n;i++) a[i]= rand()%500 + 1;
 
+        /* writing into the file appropriately */
+        
+        /*  */
     }
 
     return 0;
