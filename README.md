@@ -1,6 +1,3 @@
-### Go to the specific folder to see the specific tasks along with the README file.
-### Please check the CP Folder as of now only as the rest are not completed yet.
-
 # P-Club_secy
 
 
