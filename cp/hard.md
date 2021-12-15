@@ -41,3 +41,19 @@ max(m<sub>it</sub>+m<sub>(t+1)j</sub>) because in case in the subarray from i to
 
 However our solution of iterating will anyhow work because we have been iterating from the start and the case of taking the immediate next element of selling point will be taken care of.
 **Also from the wastage of test cases we can see for a possible optimization here and will follow up next with a more optimized algorithm later on**
+
+##### EVEN GENERAL SOLUTION
+With the algorithm used for the previous easier problem this question can be given with a recursive solution which can solve the problem. The general solution is very straightforward and even if we use the O(N) solution of last easy version we get a overall O(N<sup>N</sup>) solution which would be very slow.
+In this case, we simply calculate the profit corresponding to all the possible sets of transactions and find out the maximum profit out of them.
+
+##### A FASTER SOLUTION
+The final solution to this problem would be peak valley approach.
+We state the solution method first -
+If we analyze the graph, we notice that the points of interest are the consecutive valleys and peaks.
+
+Mathematically speaking: Total Max Profit= summation of all consecutive pairs of profit and loss.
+
+The key point is we need to consider every peak immediately following a valley to maximize the profit. In case we skip one of the peaks (trying to obtain more profit), we will end up losing the profit over one of the transactions leading to an overall lesser profit.
+This solution would solve the problem in O(N) time and O(1) space complexity.
+
+However the proof of this solution is quite rigorous and time consuming -

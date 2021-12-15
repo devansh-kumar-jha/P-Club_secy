@@ -1,39 +1,6 @@
-#pragma GCC optimize("Ofast,unroll-loops")
-#pragma GCC target("avx,avx2,fma")
 #include<bits/stdc++.h>
-#include <ext/pb_ds/tree_policy.hpp>
-#include<ext/pb_ds/assoc_container.hpp>
-using namespace __gnu_pbds;
 using namespace std;
 #define int long long int
-
-
-#define pb push_back
-#define mp make_pair
-#define mii map<int,int>
-#define pii pair<int,int>
-#define vi  vector<int>
-#define sii set<int,int>
-#define pqb priority_queue<int>
-#define pqs priority_queue<int,vi,greater<int>>
-#define setbits(x) _builtin_popcountll(x)
-#define zrobits(x) _builtin_ctzll(x)
-#define mod 1000000007
-#define inf 1e18
-#define ps(x,y) fixed<<setprecision(y)<<x
-#define mk(arr,n,type) type *arr=new type[n]
-#define w(t) int t;  cin>>t;  while(t--)
-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
-
-
-typedef tree<int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_update> ordered_set;
-typedef tree<int, null_type, less_equal<int>, rb_tree_tag, tree_order_statistics_node_update> ordered_multiset;
-template<class T,class V> void _print(pair<T,V> p) {cerr<<"{"; _print(p.first);cerr<<","; _print(p.second);cerr<<"}";}
-template<class T>void _print(vector<T> v) {cerr<<" [ "; for (T i:v){_print(i);cerr<<" ";}cerr<<"]";}
-template<class T>void _print(set<T> v) {cerr<<" [ "; for (T i:v){_print(i); cerr<<" ";}cerr<<"]";}
-template<class T>void _print(multiset<T> v) {cerr<< " [ "; for (T i:v){_print(i);cerr<<" ";}cerr<<"]";}
-template<class T,class V>void _print(map<T, V> v) {cerr<<" [ "; for(auto i:v) {_print(i);cerr<<" ";} cerr<<"]";}
-
 
 void dkj()
 {
@@ -46,7 +13,6 @@ void dkj()
     #endif
 }
 
-
 void standard()
 {
     cout<<2<<"\n"<<3<<" "<<7<<"\n";
@@ -55,14 +21,12 @@ void standard()
     return;
 }
 
-
 void boundary()
 {
     cout<<0<<"\n";
     cout<<1<<"\n"<<5<<"\n";
     return;
 }
-
 
 void large()
 {
@@ -80,8 +44,6 @@ void large()
 
     return;
 }
-
-
 
 int32_t main()
 {

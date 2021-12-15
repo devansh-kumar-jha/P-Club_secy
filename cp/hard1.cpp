@@ -2,6 +2,17 @@
 using namespace std;
 #define int long long int
 
+int count(int a[],int s,int e)
+{
+    int min=a[s];
+    int ans=0;
+    for(int i=s+1;i<=e;i++) {
+        if(ans<(a[i]-min)) ans=a[i]-min;
+        if(min>a[i]) min=a[i];
+    }
+    return ans;
+}
+
 // Ranges are as follows 0 <= i < n-1 and i < j < n
 int find_maxp(int a[],int i,int j,int n)
 {
