@@ -1,4 +1,4 @@
-## CRITERIONS
+## TASK 1 CRITERIONS
 
 The python notebooks contain solution of the problem statement. The notebooks contain the following content -
 1) *criteria1.ipynb* - Contains linear regression model with loss function |x-xbar|^3
